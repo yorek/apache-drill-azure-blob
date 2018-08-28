@@ -1,2 +1,5 @@
-# apache-drill-azure-blob
-A simple way to run Apache Drill agains Azure Blob store
+## Apache Drill on Azure Blob
+
+A simple way to run Apache Drill against Azure Blob store.
+
+
