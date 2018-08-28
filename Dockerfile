@@ -8,6 +8,5 @@ RUN curl http://central.maven.org/maven2/com/microsoft/azure/azure-storage/8.0.0
 WORKDIR /opt/drill
 
 COPY conf ./conf
-COPY data ./data
 
 WORKDIR /
