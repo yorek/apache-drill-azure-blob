@@ -2,7 +2,7 @@
 
 A simple way to run Apache Drill against Azure Blob store.
 
-## Notes
+## Notes 
 
 This repo is a companion of this Medium post: 
 
@@ -12,12 +12,3 @@ and the official Apache Drill documentation:
 
 https://drill.apache.org/docs/azure-blob-storage-plugin/ 
 
-## Run Apache Drill in a Container
-
-Make sure you have Docker installed and configured to support Linux containers.
-
-Configure the files `conf/core-size.xml` and `conf/storage-plugins-override.conf` as described in one of the above articles and then build the Docker image using `drill-build.bat`.
-
-Once the image is ready, run it using `drill-run.bat`
-
-and you can then start query your files directly on Azure.
