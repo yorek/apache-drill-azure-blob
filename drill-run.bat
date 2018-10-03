@@ -1,1 +1,1 @@
-docker run -it --name drill -p 8047:8047 -t yorek:azuredrill /bin/bash
+docker run -it --name drill -p 8047:8047 -t yorek/apache-drill-azure-blob /bin/bash
