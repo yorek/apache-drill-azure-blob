@@ -34,3 +34,14 @@ or you can connect via the terminal:
 
     docker attach drill
 
+**Running Drill on Azure**
+
+If you want to query data stored in a blob store it's much better from a performance and cost saving perspective to run also Drill on Azure, so that files doesn't need to be moved to your client in order to be queries.
+
+Right now I haven't been able to run the docker image in Azure Container Instances, so the best way to have the docker image runnin in Azure is to create a Ubuntu 18.04 VM and then run the docker image from there.
+
+Once you have the VM created you can install docker by following this doc:
+
+https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
+
+
