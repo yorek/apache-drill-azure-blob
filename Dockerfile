@@ -7,4 +7,6 @@ RUN curl http://central.maven.org/maven2/com/microsoft/azure/azure-storage/8.0.0
 
 WORKDIR /
 
-CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
+COPY init-script.sh /usr/bin/init-script.sh
+
+ENTRYPOINT /usr/bin/init-script.sh
