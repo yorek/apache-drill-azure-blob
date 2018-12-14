@@ -32,7 +32,7 @@ if you prefer to use the console shell, you need to attach your terminale to the
 
     docker attach drill
 
-**Running the pre-build image**
+**Running the pre-built image**
 
 If you don't need a more secure environment like the one described above, you can just use the image available at docker hub:
 
@@ -50,7 +50,7 @@ or you can connect via the terminal:
 
 Please note that this approach is great for testing or running ad-hoc queries, but keep in mind that the storage configuration will be visibile and accessibile to everyone. If you have specific security requirements, you may want to build and use a Container image where the storage account is not visibile to the end user. You can find the instruction in the previous section.
 
-**Running the pre-build image in Azure**
+**Running the pre-built image in Azure**
 
 If you want to query data stored in a blob store it's much better from a performance and cost saving perspective to run also Drill on Azure, so that files doesn't need to be moved to your client in order to be queries.
 
