@@ -6,10 +6,10 @@
             "value": "westus"
         },
         "networkInterfaceName": {
-            "value": "apache-drll507"
+            "value": "apache-drill507"
         },
         "networkSecurityGroupName": {
-            "value": "apache-drll-nsg"
+            "value": "apache-drill-nsg"
         },
         "networkSecurityGroupRules": {
             "value": [
@@ -63,7 +63,7 @@
             ]
         },
         "publicIpAddressName": {
-            "value": "apache-drll-ip"
+            "value": "apache-drill-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -72,7 +72,7 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "apache-drll"
+            "value": "apache-drill"
         },
         "virtualMachineRG": {
             "value": "drill"
