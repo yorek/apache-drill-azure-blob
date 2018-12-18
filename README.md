@@ -1,6 +1,6 @@
 # Apache Drill on Azure Blob
 
-A simple way to run Apache Drill against Azure Blob store. 
+A simple way to run Apache Drill (embedded mode) against Azure Blob store. 
 
 **Notes** 
 
@@ -61,3 +61,16 @@ Once you have the VM created you can install docker by following this doc:
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
 
 after that VM is running you can choose one of the two described options (custom image or pre-built image) to run the Apache Drill docker container in the VM.
+
+The script to create and run Apache Drill in a VM are available in the `vm` folder:
+
+    cd vm
+    ./create-azure-vm.sh
+
+The script will create a VM named `apache-drill` into the `drill` Resource Group in the `WestUs2` region.
+
+The VM will be set up using the script availabe in `vm/setup-drill.sh` via [cloud-init](https://launchpad.net/cloud-init) and the Docker image will be pulled and executed.
+
+After a few minutes Apache Drill Embedded will be up and running.
+
+> NOTE: Apache Drill is installed in the "embedded" mode. This is recommeneded only for testing purposes. If you need a scalable solution you should install Apache Drill in "distributed" mode. https://drill.apache.org/docs/install-drill-introduction/
