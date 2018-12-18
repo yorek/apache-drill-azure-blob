@@ -62,7 +62,7 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
 
 after that VM is running you can choose one of the two described options (custom image or pre-built image) to run the Apache Drill docker container in the VM.
 
-The script to create and run Apache Drill in a VM are available in the `vm` folder:
+If you want to go with full automation, you can create and run Apache Drill in a VM using the script available in the `vm` folder:
 
     cd vm
     ./create-azure-vm.sh
