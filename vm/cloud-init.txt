@@ -8,4 +8,4 @@ packages:
  
 runcmd:
  - curl https://raw.githubusercontent.com/yorek/apache-drill-azure-blob/master/vm/setup-drill.sh | bash
- - docker run -it --rm -d --name drill -p 8047:8047 -t yorek/apache-drill-azure-blob /bin/bash
+ - docker run -it --rm -d --name drill -p 8047:8047 --restart always -t yorek/apache-drill-azure-blob /bin/bash
