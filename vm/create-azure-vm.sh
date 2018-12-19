@@ -27,10 +27,17 @@ az network nsg rule delete \
 
 az network nsg rule create \
     --resource-group $RG \
-    --name apache-drill \
+    --name apache-drill-http \
     --nsg-name $NSGNAME \
     --destination-port-ranges 8047 \
     --priority 300
+
+az network nsg rule create \
+    --resource-group $RG \
+    --name apache-drill-odbc \
+    --nsg-name $NSGNAME \
+    --destination-port-ranges 31010 \
+    --priority 400
 
 IPID=`az network nic show --ids $NICID --query "ipConfigurations[0].publicIpAddress.id" -o tsv`
 
