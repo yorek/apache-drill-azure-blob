@@ -38,6 +38,6 @@ IP=`az network public-ip show --ids $IPID --query "ipAddress" -o tsv`
 
 echo "Waiting for cloud-init and docker pull to finish..."
 
-sleep 3m
+sleep 180s
 
 echo "Apache Drill is available at http://$IP:8047"
