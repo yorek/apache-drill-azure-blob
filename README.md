@@ -2,7 +2,7 @@
 
 A simple way to run Apache Drill (embedded mode) against Azure Blob store. 
 
-> NOTE: Apache Drill is installed in the "embedded" mode. This is recommeneded only for testing purposes. If you need a scalable solution you should install Apache Drill in "distributed" mode. https://drill.apache.org/docs/install-drill-introduction/
+> NOTE: Apache Drill is installed in the "embedded" mode. This is recommeneded only for testing purposes. If you need a scalable solution you should install Apache Drill in "distributed" mode. https://drill.apache.org/docs/install-drill-introduction/. Here you can find a repo dedicated to run Apache Drill in Distributed mode on containers
 
 **Detailed Articles** 
 
@@ -77,4 +77,4 @@ The VM will be set up using the script availabe in `vm/setup-drill.sh` via [clou
 
 After a few minutes Apache Drill Embedded will be up and running.
 
-> NOTE: Apache Drill is installed in the "embedded" mode. This is recommeneded only for testing purposes. If you need a scalable solution you should install Apache Drill in "distributed" mode. https://drill.apache.org/docs/install-drill-introduction/
+> NOTE: Apache Drill is installed in the "embedded" mode. This is recommeneded only for testing purposes. If you need a scalable solution you should install Apache Drill in "distributed" mode. https://drill.apache.org/docs/install-drill-introduction/. Here you can find a repo dedicated to run Apache Drill in Distributed mode on containers
