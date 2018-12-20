@@ -2,7 +2,9 @@
 
 A simple way to run Apache Drill (embedded mode) against Azure Blob store. 
 
-**Notes** 
+> NOTE: Apache Drill is installed in the "embedded" mode. This is recommeneded only for testing purposes. If you need a scalable solution you should install Apache Drill in "distributed" mode. https://drill.apache.org/docs/install-drill-introduction/
+
+**Detailed Articles** 
 
 This repo is a companion of this Medium post: 
 
@@ -12,7 +14,7 @@ and the official Apache Drill documentation:
 
 https://drill.apache.org/docs/azure-blob-storage-plugin/
 
-**Bulding and Running the Image**
+**Building and Running the Image**
 
 With this approach you'll customize the storage plugin configuration so that the Azure Blob Storage Key will never be visible to the user using Drill. This is the most secure way to run Drill against Azure Blob Storage, but it requires you to *build* your own image and then run it.
 
