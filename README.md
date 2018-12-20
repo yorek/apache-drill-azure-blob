@@ -10,6 +10,8 @@ https://medium.com/@mauridb/apache-drill-azure-blobs-and-azure-stream-analytics-
 
 and the official Apache Drill documentation:
 
+https://drill.apache.org/docs/azure-blob-storage-plugin/
+
 **Bulding and Running the Image**
 
 With this approach you'll customize the storage plugin configuration so that the Azure Blob Storage Key will never be visible to the user using Drill. This is the most secure way to run Drill against Azure Blob Storage, but it requires you to *build* your own image and then run it.
